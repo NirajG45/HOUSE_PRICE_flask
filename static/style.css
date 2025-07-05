@@ -1,95 +1,95 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
 
-        body {
-            height: 100vh;
-            background: linear-gradient(135deg, #89f7fe, #66a6ff);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .container {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-            padding: 40px;
-            max-width: 500px;
-            width: 90%;
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
 
-        h1 {
-            font-size: 28px;
-            margin-bottom: 25px;
-            color: #003366;
-        }
+h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #003366;
+}
 
-        input[type="number"] {
-            width: 100%;
-            padding: 12px 15px;
-            margin: 12px 0;
-            border: none;
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.8);
-            font-size: 16px;
-            transition: 0.3s ease;
-        }
+input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    transition: 0.3s ease;
+}
 
-        input:focus {
-            outline: none;
-            box-shadow: 0 0 5px rgba(0, 114, 255, 0.8);
-            background: #ffffff;
-        }
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 114, 255, 0.8);
+    background: #ffffff;
+}
 
-        button {
-            padding: 12px 30px;
-            background: #0072ff;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            margin-top: 15px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s ease;
-        }
+button {
+    padding: 12px 30px;
+    background: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
 
-        button:hover {
-            background-color: #005ecc;
-            transform: scale(1.05);
-        }
+button:hover {
+    background-color: #005ecc;
+    transform: scale(1.05);
+}
 
-        .result {
-            margin-top: 25px;
-            background-color: #ffffff;
-            border-left: 5px solid #0072ff;
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+.result {
+    margin-top: 25px;
+    background-color: #ffffff;
+    border-left: 5px solid #0072ff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
-        footer {
-            margin-top: 30px;
-            font-size: 13px;
-            color: #222;
-            opacity: 0.8;
-        }
+footer {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #222;
+    opacity: 0.8;
+}
 
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 22px;
-            }
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
 
-            button {
-                width: 100%;
-            }
-        }
+    button {
+        width: 100%;
+    }
+}
