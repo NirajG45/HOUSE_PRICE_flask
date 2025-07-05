@@ -2,36 +2,26 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 import pickle
 
-# Sample dataset (can be extended)
+# Sample dataset
 data = {
-    'Location': ['Delhi', 'Mumbai', 'Bangalore', 'Delhi', 'Mumbai'],
+    'Area': [1000, 1500, 2000, 2500, 3000],
     'Bedrooms': [2, 3, 3, 4, 5],
-    'BedroomArea': [300, 450, 500, 600, 750],
-    'Bathrooms': [1, 2, 2, 3, 3],
-    'BathroomArea': [100, 150, 180, 200, 240],
-    'Toilets': [1, 2, 2, 2, 3],
-    'ToiletArea': [80, 100, 120, 130, 150],
-    'Price': [50, 80, 95, 120, 160]
+    'Age': [5, 3, 10, 7, 2],
+    'Price': [50, 70, 90, 110, 150]
 }
 
 df = pd.DataFrame(data)
 
-# One-hot encode location
-df = pd.get_dummies(df, columns=['Location'])
-
-# Features and labels
-X = df.drop('Price', axis=1)
+# Features and label
+X = df[['Area', 'Bedrooms', 'Age']]
 y = df['Price']
 
 # Train model
 model = LinearRegression()
 model.fit(X, y)
 
-# Save model and columns
+# Save model
 with open('model/model.pkl', 'wb') as f:
     pickle.dump(model, f)
 
-with open('model/columns.pkl', 'wb') as f:
-    pickle.dump(X.columns.tolist(), f)
-
-print("✅ Model trained and saved.")
+print("Model saved successfully.")
