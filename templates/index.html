@@ -10,13 +10,24 @@
     </style>
 </head>
 <body>
-    <h1>🏠 House Price Prediction</h1>
+    <div class="container">
+        <h1>🏠 House Price Predictor</h1>
         <form method="POST" action="/predict">
-            <input type="number" name="area" placeholder="Enter Area (sqft)" required><br>
-            <input type="number" name="bedrooms" placeholder="Enter Bedrooms" required><br>
-            <input type="number" name="age" placeholder="Enter Age (years)" required><br>
+            <input type="number" name="area" placeholder="Enter Area (in sqft)" required>
+            <input type="number" name="bedrooms" placeholder="Enter Number of Bedrooms" required>
+            <input type="number" name="age" placeholder="Enter House Age (in years)" required>
             <button type="submit">Predict Price</button>
         </form>
-        <h2>{{ result }}</h2>
+
+        {% if result %}
+        <div class="result">
+            {{ result }}
+        </div>
+        {% endif %}
+
+        <footer>
+            Developed by Subh | Powered by Flask + ML
+        </footer>
+    </div>
 </body>
 </html>
